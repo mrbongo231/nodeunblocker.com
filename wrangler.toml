@@ -1,0 +1,26 @@
+name = "nodeunblocker-worker"
+main = "worker.js"
+compatibility_date = "2025-12-10"
+
+# Environment variables
+[vars]
+GA_ID = "UA-XXXXXX-X"   # replace with your Google Analytics ID if you want GA injection
+
+# Serve static assets from the public folder
+[site]
+bucket = "./public"
+
+# Optional: custom routes
+# Uncomment and edit if you want to bind to a specific domain
+# routes = [
+#   { pattern = "yourdomain.com/*", zone_id = "YOUR_ZONE_ID" }
+# ]
+
+# Optional: bindings for KV, R2, Durable Objects if you expand functionality
+# [kv_namespaces]
+# binding = "MY_KV"
+# id = "xxxxxxxxxxxxxxxxxxxx"
+
+# [r2_buckets]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
