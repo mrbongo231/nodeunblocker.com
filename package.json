@@ -1,21 +1,14 @@
 {
-  "name": "nodeunblocker.com",
-  "description": "Web proxy for evading internet censorship",
+  "name": "nodeunblocker-worker",
+  "description": "Web proxy for evading internet censorship (Cloudflare Worker version)",
   "author": "Nathan Friedly - http://nfriedly.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "homepage": "https://github.com/nfriedly/nodeunblocker.com/",
-  "dependencies": {
-    "express": "^4.13.0",
-    "gatling": "^2.0.0",
-    "unblocker": "^2.3.1",
-    "ytdl-core": "^4.11.5"
-  },
-  "engines": {
-    "node": ">=6"
-  },
+  "dependencies": {},
   "scripts": {
-    "start": "gatling app.js"
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
   },
   "license": "AGPL-3.0"
 }
